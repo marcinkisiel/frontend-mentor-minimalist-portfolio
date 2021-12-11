@@ -10,10 +10,74 @@
 		<title>Frontend Mentor | Minimalist Portfolio</title>
 	</head>
 	<body>
-		Home Portfolio Contact Me Hey, I’m Alex Spencer and I love building beautiful websites About Me About Me I’m a junior front-end developer
-		looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript.
-		When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy
-		working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s
-		going for a walk, run or cycling. I’d love you to check out my work. Go to Portfolio Interested in doing a project together? Contact Me
+		<header class="header">
+			<div class="header__logo-box">
+				<img src="./images/logo.svg" alt="Logo" class="header__logo-image" />
+			</div>
+			<nav class="menu menu-header">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Contact Me</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-menu-toggle"></div>
+		</header>
+
+		<section class="hero">
+			<img src="./images/homepage/mobile/image-homepage-hero.jpg" alt="Hero" class="hero__image" />
+			<h1 class="hero__title">I’m Alex Spencer and I love building beautiful websites</h1>
+			<a href="#" class="button button-primary" role="button">About Me</a>
+		</section>
+
+		<section class="about-me">
+			<img src="./images/homepage/mobile/image-homepage-profile.jpg" alt="Profile" class="about-me__image" />
+			<div class="about-me__text">
+				<h2 class="about-me__title">About Me</h2>
+				<p class="about-me__paragraph">
+					I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern
+					CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools
+					are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding,
+					you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my
+					work.
+				</p>
+				<a href="#" class="about-me__button button button-secondary" role="button">Go to Portfolio</a>
+			</div>
+		</section>
+
+		<section class="cta">
+			<h2 class="cta__title">Interested in doing a project together?</h2>
+			<a href="#" class="cta__button button button-secondary" role="button">Contact Me</a>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__logo-box">
+				<img src="./images/logo.svg" alt="Logo" class="footer__logo-image" />
+			</div>
+			<nav class="menu menu-footer">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Contact Me</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-social">
+				<ul class="menu-social__list">
+					<li class="menu-social__item">
+						<a href="#" class="menu-social__link"><img src="./images/icons/github.svg" alt="GitHub logo" class="menu-social__icon" /></a>
+					</li>
+					<li class="menu-social__item">
+						<a href="#" class="menu-social__link"
+							><img src="./images/icons/twitter.svg" alt="Twitter logo" class="menu-social__icon"
+						/></a>
+					</li>
+					<li class="menu-social__item">
+						<a href="#" class="menu-social__link"
+							><img src="./images/icons/linkedin.svg" alt="LinkedIn logo" class="menu-social__icon"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>
