@@ -27,13 +27,23 @@
 		</header>
 
 		<section class="hero container">
-			<img src="./images/homepage/mobile/image-homepage-hero.jpg" alt="Hero" class="hero__image" />
+			<picture>
+				<source srcset="./images/homepage/tablet/image-homepage-hero.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+				<source srcset="./images/homepage/desktop/image-homepage-hero.jpg" media="(min-width: 1200px)" />
+				<img src="./images/homepage/mobile/image-homepage-hero.jpg" alt="Hero" class="hero__image" />
+			</picture>
+
 			<h1 class="hero__title">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
 			<a href="#" class="button button-primary" role="button">About Me</a>
 		</section>
 
 		<section class="about-me container">
-			<img src="./images/homepage/mobile/image-homepage-profile.jpg" alt="Profile" class="about-me__image" />
+			<picture>
+				<source srcset="./images/homepage/tablet/image-homepage-profile.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+				<source srcset="./images/homepage/desktop/image-homepage-profile.jpg" media="(min-width: 1200px)" />
+				<img src="./images/homepage/mobile/image-homepage-profile.jpg" alt="Profile" class="about-me__image" />
+			</picture>
+
 			<div class="about-me__text">
 				<h2 class="about-me__title">About Me</h2>
 				<p class="about-me__paragraph">

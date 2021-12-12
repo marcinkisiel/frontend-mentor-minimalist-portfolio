@@ -12,5 +12,15 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 40px;
+
+		@media (min-width: $md) {
+			flex-direction: row;
+		}
+	}
+
+	&__logo-box {
+		@media (min-width: $md) {
+			margin-right: calc(48px - 42px);
+		}
 	}
 }

@@ -1,4 +1,8 @@
 .menu-social {
+	@media (min-width: $md) {
+		margin-left: auto;
+	}
+
 	&__link {
 		display: block;
 		line-height: 0;
