@@ -4,6 +4,10 @@
 		gap: 70px;
 	}
 
+	@media (min-width: $xl) {
+		gap: 125px;
+	}
+
 	&__image {
 		display: block;
 		margin-bottom: 32px;
@@ -25,6 +29,10 @@
 
 		@media (min-width: $md) {
 			padding-top: 50px;
+		}
+
+		@media (min-width: $xl) {
+			padding-right: 92px;
 		}
 
 		&::before,
