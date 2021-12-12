@@ -1,7 +1,11 @@
 .hero {
+	margin-bottom: 96px;
+
 	&__title {
+		margin-top: 24px;
+		margin-bottom: 32px;
 		font-size: 40px;
 		line-height: 42px;
-		letter-spacing: -0.4px;
+		letter-spacing: -0.35px;
 	}
 }

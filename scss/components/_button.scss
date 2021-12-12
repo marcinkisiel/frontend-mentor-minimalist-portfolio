@@ -11,4 +11,38 @@
 	text-align: center;
 	text-transform: uppercase;
 	border: 1px solid $primary-dark;
+	transition: $main-transition;
+
+	&:hover {
+		color: $white;
+		background-color: $primary-dark;
+	}
+}
+
+.button-primary {
+	position: relative;
+	height: 48px;
+	padding-left: calc(32px + 48px);
+	color: $white;
+	background-color: $primary-darker;
+	border: none;
+
+	&:hover {
+		background-color: $primary-light;
+
+		&::before {
+			content: url(../../images/icons/down-arrows-white.svg);
+		}
+	}
+
+	&::before {
+		content: url(../../images/icons/down-arrows.svg);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 48px;
+		height: 48px;
+		background-color: rgba($black, 0.1);
+		padding: 16px 16px;
+	}
 }
