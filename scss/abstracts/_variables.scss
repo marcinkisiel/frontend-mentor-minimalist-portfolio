@@ -12,23 +12,33 @@ $xl: 1200px;
 
 // Colors
 
-// Beaver
-$primary-light: #9e7f66;
-// Cod gray
-$primary-dark: #111111;
-// Shuttle gray
-$secondary-light: #5c6779;
-// Ebony Clay
-$secondary-dark: #242b37;
-// Mirage
-$secondary-darker: #17192b;
+// Slightly Desaturated Cyan
+$primary-light: #5fb4a2;
+// Grayish Dark Blue
+$primary-dark: #33323d;
+// Dark Blue
+$primary-darker: #203a4c;
+
+// Very Light Grey (BG)
+$secondary-lighter: #fafafa;
+// Light Grey (Text field)
+$secondary-light: #eaeaeb;
+// Bright Red (Errors)
+$primary-error: #f43030;
+
+// Black
+$black: #000;
 // White
 $white: #fff;
 
 // Typography
 
-// Spartan Google Font
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap');
+// Ibarra Real Nova
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
+// Public Sans
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-// Spartan font family
-$spartan: 'Spartan', sans-serif;
+// Heading font / Ibarra Real Nova
+$head-font: 'Ibarra Real Nova', serif;
+// Body font / Public Sans
+$body-font: 'Public Sans', sans-serif;

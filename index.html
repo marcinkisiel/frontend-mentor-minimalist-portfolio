@@ -10,27 +10,29 @@
 		<title>Frontend Mentor | Minimalist Portfolio</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header container">
 			<div class="header__logo-box">
 				<a href="./index.html" class="header__logo-link"><img src="./images/logo.svg" alt="Logo" class="header__logo-image" /></a>
 			</div>
-			<nav class="menu menu-header">
+			<nav class="header__menu menu">
 				<ul class="menu__list">
 					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
 					<li class="menu__item"><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
 					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
 				</ul>
 			</nav>
-			<div class="mobile-menu-toggle"></div>
+			<div class="mobile-menu-toggle">
+				<img src="./images/icons/hamburger.svg" alt="" class="mobile-menu-toggle__icon" />
+			</div>
 		</header>
 
-		<section class="hero">
+		<section class="hero container">
 			<img src="./images/homepage/mobile/image-homepage-hero.jpg" alt="Hero" class="hero__image" />
 			<h1 class="hero__title">I’m Alex Spencer and I love building beautiful websites</h1>
 			<a href="#" class="button button-primary" role="button">About Me</a>
 		</section>
 
-		<section class="about-me">
+		<section class="about-me container">
 			<img src="./images/homepage/mobile/image-homepage-profile.jpg" alt="Profile" class="about-me__image" />
 			<div class="about-me__text">
 				<h2 class="about-me__title">About Me</h2>
@@ -45,39 +47,45 @@
 			</div>
 		</section>
 
-		<section class="cta">
+		<section class="cta container">
 			<h2 class="cta__title">Interested in doing a project together?</h2>
 			<a href="./contact.html" class="cta__button button button-secondary" role="button">Contact Me</a>
 		</section>
 
 		<footer class="footer">
-			<div class="footer__logo-box">
-				<a href="./index.html" class="footer__logo-link"><img src="./images/logo.svg" alt="Logo" class="footer__logo-image" /></a>
+			<div class="footer__container container">
+				<div class="footer__logo-box">
+					<a href="./index.html" class="footer__logo-link">
+						<img src="./images/logo-white.svg" alt="Logo" class="footer__logo-image" />
+					</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list menu__list--footer">
+						<li class="menu__item"><a href="./index.html" class="menu__link menu__link--footer">Home</a></li>
+						<li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--footer">Portfolio</a></li>
+						<li class="menu__item"><a href="./contact.html" class="menu__link menu__link--footer">Contact Me</a></li>
+					</ul>
+				</nav>
+				<nav class="menu-social">
+					<ul class="menu-social__list">
+						<li class="menu-social__item">
+							<a href="#" class="menu-social__link"
+								><img src="./images/icons/github-white.svg" alt="GitHub logo" class="menu-social__icon"
+							/></a>
+						</li>
+						<li class="menu-social__item">
+							<a href="#" class="menu-social__link"
+								><img src="./images/icons/twitter-white.svg" alt="Twitter logo" class="menu-social__icon"
+							/></a>
+						</li>
+						<li class="menu-social__item">
+							<a href="#" class="menu-social__link"
+								><img src="./images/icons/linkedin-white.svg" alt="LinkedIn logo" class="menu-social__icon"
+							/></a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="menu menu-footer">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
-					<li class="menu__item"><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
-					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
-				</ul>
-			</nav>
-			<nav class="menu-social">
-				<ul class="menu-social__list">
-					<li class="menu-social__item">
-						<a href="#" class="menu-social__link"><img src="./images/icons/github.svg" alt="GitHub logo" class="menu-social__icon" /></a>
-					</li>
-					<li class="menu-social__item">
-						<a href="#" class="menu-social__link"
-							><img src="./images/icons/twitter.svg" alt="Twitter logo" class="menu-social__icon"
-						/></a>
-					</li>
-					<li class="menu-social__item">
-						<a href="#" class="menu-social__link"
-							><img src="./images/icons/linkedin.svg" alt="LinkedIn logo" class="menu-social__icon"
-						/></a>
-					</li>
-				</ul>
-			</nav>
 		</footer>
 	</body>
 </html>

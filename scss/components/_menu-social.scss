@@ -1,0 +1,11 @@
+.menu-social {
+	&__link {
+		display: block;
+		line-height: 0;
+	}
+
+	&__list {
+		display: flex;
+		gap: 16px;
+	}
+}

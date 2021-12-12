@@ -1,3 +1,47 @@
 /**
  * Basic typography style for copy text
  */
+
+body {
+	font-family: $body-font;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: $primary-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $head-font;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 42px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-dark;
+}
+
+li {
+	list-style-type: none;
+}
