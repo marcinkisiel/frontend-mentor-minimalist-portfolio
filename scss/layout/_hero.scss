@@ -1,5 +1,22 @@
 .hero {
+	position: relative;
 	margin-bottom: 96px;
+
+	&__image {
+		display: block;
+	}
+
+	&__text-box {
+		@media (min-width: $md) {
+			position: absolute;
+			bottom: 0;
+			left: 40px;
+			width: 67%;
+			// padding-top: 56px;
+			// padding-right: 56px;
+			background-color: $white;
+		}
+	}
 
 	&__title {
 		margin-top: 24px;
@@ -7,5 +24,9 @@
 		font-size: 40px;
 		line-height: 42px;
 		letter-spacing: -0.35px;
+
+		@media (min-width: $md) {
+			margin: 56px 56px 48px 0;
+		}
 	}
 }

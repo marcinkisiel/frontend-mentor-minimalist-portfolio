@@ -5,6 +5,15 @@
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		color: $primary-dark;
+		transition: $main-transition;
+
+		&:hover {
+			color: $primary-light;
+		}
+
+		&--active {
+			color: $primary-light;
+		}
 
 		&--footer {
 			display: block;
@@ -14,6 +23,7 @@
 
 	&__list {
 		display: flex;
+		gap: 42px;
 
 		&--footer {
 			flex-direction: column;

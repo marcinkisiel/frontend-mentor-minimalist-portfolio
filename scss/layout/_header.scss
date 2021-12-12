@@ -8,12 +8,22 @@
 	padding-top: 32px;
 	padding-bottom: 40px;
 
-	&__link {
+	&__logo-link {
 		display: block;
 		line-height: 0;
 	}
 
 	&__menu {
 		display: none;
+
+		@media (min-width: $md) {
+			display: block;
+		}
+	}
+
+	&__mobile-menu-toggle {
+		@media (min-width: $md) {
+			display: none;
+		}
 	}
 }
