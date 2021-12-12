@@ -1,0 +1,40 @@
+.about-me {
+	&__image {
+		display: block;
+		margin-bottom: 32px;
+	}
+
+	&__paragraph {
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		position: relative;
+		padding-top: 32px;
+		padding-bottom: 50px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: $primary-dark;
+			opacity: 0.15;
+		}
+
+		&::before {
+			top: 0;
+			left: 0;
+		}
+
+		&::after {
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&__title {
+		margin-bottom: 28px;
+	}
+}
