@@ -4,7 +4,7 @@
 
 ### live demo
 
-[Minimalist portfolio website]()
+[Minimalist portfolio website](https://marcinkisiel.github.io/frontend-mentor-minimalist-portfolio/)
 
 ### description
 

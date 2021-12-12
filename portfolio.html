@@ -17,18 +17,22 @@
 			<nav class="header__menu menu">
 				<ul class="menu__list">
 					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
-					<li class="menu__item"><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
+					<li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--active">Portfolio</a></li>
 					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
 				</ul>
 			</nav>
-			<div class="mobile-menu-toggle">
+			<div class="header__mobile-menu-toggle">
 				<img src="./images/icons/hamburger.svg" alt="" class="mobile-menu-toggle__icon" />
 			</div>
 		</header>
 
-		<section class="project">
+		<section class="project container">
 			<div class="project__column">
-				<img src="./images/portfolio/mobile/image-portfolio-manage.jpg" alt="Manage" class="project__image" />
+				<picture>
+					<source srcset="./images/portfolio/tablet/image-portfolio-manage.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/portfolio/desktop/image-portfolio-manage.jpg" media="(min-width: 1200px)" />
+					<img src="./images/portfolio/mobile/image-portfolio-manage.jpg" alt="Manage" class="project__image" />
+				</picture>
 			</div>
 			<div class="project__column">
 				<h2 class="project__title">Manage</h2>
@@ -40,9 +44,13 @@
 			</div>
 		</section>
 
-		<section class="project">
+		<section class="project container">
 			<div class="project__column">
-				<img src="./images/portfolio/mobile/image-portfolio-bookmark.jpg" alt="Bookmark" class="project__image" />
+				<picture>
+					<source srcset="./images/portfolio/tablet/image-portfolio-bookmark.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/portfolio/desktop/image-portfolio-bookmark.jpg" media="(min-width: 1200px)" />
+					<img src="./images/portfolio/mobile/image-portfolio-bookmark.jpg" alt="Manage" class="project__image" />
+				</picture>
 			</div>
 			<div class="project__column">
 				<h2 class="project__title">Bookmark</h2>
@@ -54,9 +62,13 @@
 			</div>
 		</section>
 
-		<section class="project">
+		<section class="project container">
 			<div class="project__column">
-				<img src="./images/portfolio/mobile/image-portfolio-insure.jpg" alt="Insure" class="project__image" />
+				<picture>
+					<source srcset="./images/portfolio/tablet/image-portfolio-insure.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/portfolio/desktop/image-portfolio-insure.jpg" media="(min-width: 1200px)" />
+					<img src="./images/portfolio/mobile/image-portfolio-insure.jpg" alt="Manage" class="project__image" />
+				</picture>
 			</div>
 			<div class="project__column">
 				<h2 class="project__title">Insure</h2>
@@ -68,9 +80,13 @@
 			</div>
 		</section>
 
-		<section class="project">
+		<section class="project container">
 			<div class="project__column">
-				<img src="./images/portfolio/mobile/image-portfolio-fylo.jpg" alt="Fylo" class="project__image" />
+				<picture>
+					<source srcset="./images/portfolio/tablet/image-portfolio-fylo.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/portfolio/desktop/image-portfolio-fylo.jpg" media="(min-width: 1200px)" />
+					<img src="./images/portfolio/mobile/image-portfolio-fylo.jpg" alt="Manage" class="project__image" />
+				</picture>
 			</div>
 			<div class="project__column">
 				<h2 class="project__title">Fylo</h2>
@@ -82,8 +98,9 @@
 			</div>
 		</section>
 
-		<section class="cta">
+		<section class="cta container">
 			<h2 class="cta__title">Interested in doing a project together?</h2>
+			<span class="cta__line"></span>
 			<a href="./contact.html" class="cta__button button button-secondary" role="button">Contact Me</a>
 		</section>
 

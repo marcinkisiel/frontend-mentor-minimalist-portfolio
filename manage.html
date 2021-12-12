@@ -16,21 +16,25 @@
 			</div>
 			<nav class="header__menu menu">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="./index.html" class="menu__link menu__link--active">Home</a></li>
 					<li class="menu__item"><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
 					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
 				</ul>
 			</nav>
-			<div class="mobile-menu-toggle">
+			<div class="header__mobile-menu-toggle">
 				<img src="./images/icons/hamburger.svg" alt="" class="mobile-menu-toggle__icon" />
 			</div>
 		</header>
 
-		<section class="hero">
-			<img src="./images/detail/mobile/image-manage-hero.jpg" alt="Hero" class="hero__image" />
+		<section class="hero container">
+			<picture>
+				<source srcset="./images/detail/tablet/image-manage-hero.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+				<source srcset="./images/detail/desktop/image-manage-hero.jpg" media="(min-width: 1200px)" />
+				<img src="./images/detail/mobile/image-manage-hero.jpg" alt="Hero" class="hero__image" />
+			</picture>
 		</section>
 
-		<section class="project">
+		<section class="project container">
 			<div class="project__column">
 				<h2 class="project__title">Manage</h2>
 				<p class="project__paragraph">
@@ -49,12 +53,17 @@
 					screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned
 					something new with each project, helping me to improve and adapt my style.
 				</p>
-				<img src="./images/detail/mobile/image-manage-preview-1.jpg" alt="" class="project__preview" />
+				<picture>
+					<source srcset="./images/detail/tablet/image-manage-preview-1.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/detail/desktop/image-manage-preview-1.jpg" media="(min-width: 1200px)" />
+					<img src="./images/detail/mobile/image-manage-preview-1.jpg" alt="" class="project__preview" />
+				</picture>
+
 				<h3 class="project__subtitle">Static Previews</h3>
 			</div>
 		</section>
 
-		<section class="project-switcher">
+		<section class="project-switcher container">
 			<div class="project-switcher__column project-switcher__column--left">
 				<h3 class="project-switcher__name">Fylo</h3>
 				<span class="project-switcher__prev-next">Previous Project</span>
@@ -65,8 +74,9 @@
 			</div>
 		</section>
 
-		<section class="cta">
+		<section class="cta container">
 			<h2 class="cta__title">Interested in doing a project together?</h2>
+			<span class="cta__line"></span>
 			<a href="./contact.html" class="cta__button button button-secondary" role="button">Contact Me</a>
 		</section>
 
