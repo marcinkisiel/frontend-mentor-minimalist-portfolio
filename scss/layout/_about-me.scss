@@ -1,7 +1,17 @@
 .about-me {
+	@media (min-width: $md) {
+		display: flex;
+		gap: 70px;
+	}
+
 	&__image {
 		display: block;
 		margin-bottom: 32px;
+
+		@media (min-width: $md) {
+			width: auto;
+			margin-bottom: 0;
+		}
 	}
 
 	&__paragraph {
@@ -12,6 +22,10 @@
 		position: relative;
 		padding-top: 32px;
 		padding-bottom: 50px;
+
+		@media (min-width: $md) {
+			padding-top: 50px;
+		}
 
 		&::before,
 		&::after {

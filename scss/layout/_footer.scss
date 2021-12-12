@@ -23,4 +23,9 @@
 			margin-right: calc(48px - 42px);
 		}
 	}
+
+	&__logo-link {
+		display: block;
+		line-height: 0;
+	}
 }

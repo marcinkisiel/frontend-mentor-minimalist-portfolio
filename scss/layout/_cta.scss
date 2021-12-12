@@ -3,7 +3,31 @@
 	margin-bottom: 80px;
 	text-align: center;
 
+	@media (min-width: $md) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 32px;
+		margin-top: 96px;
+		margin-bottom: 96px;
+	}
+
+	&__line {
+		display: none;
+
+		@media (min-width: $md) {
+			display: block;
+			width: 16%;
+			border-bottom: 1px solid rgba($primary-dark, 0.15);
+		}
+	}
+
 	&__title {
 		margin-bottom: 40px;
+
+		@media (min-width: $md) {
+			flex-basis: 50%;
+			margin-bottom: 0;
+		}
 	}
 }
