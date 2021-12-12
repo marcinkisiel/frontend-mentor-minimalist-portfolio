@@ -1,54 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | My Projects</title>
-</head>
-<body>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./css/main.css" />
 
-  Home
-  Portfolio
-  Contact Me
+		<title>Frontend Mentor | My Projects</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__logo-box">
+				<a href="./index.html" class="header__logo-link"><img src="./images/logo.svg" alt="Logo" class="header__logo-image" /></a>
+			</div>
+			<nav class="menu menu-header">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
+					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-menu-toggle"></div>
+		</header>
 
-  Manage
+		<section class="project">
+			<div class="project__column">
+				<img src="./images/portfolio/mobile/image-portfolio-manage.jpg" alt="Manage" class="project__image" />
+			</div>
+			<div class="project__column">
+				<h2 class="project__title">Manage</h2>
+				<p class="project__paragraph">
+					This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and
+					JavaScript for the areas that required interactivity, such as the testimonial slider.
+				</p>
+				<a href="./manage.html" class="project__button button button-secondary">View Project</a>
+			</div>
+		</section>
 
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
+		<section class="project">
+			<div class="project__column">
+				<img src="./images/portfolio/mobile/image-portfolio-bookmark.jpg" alt="Bookmark" class="project__image" />
+			</div>
+			<div class="project__column">
+				<h2 class="project__title">Bookmark</h2>
+				<p class="project__paragraph">
+					This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and
+					JavaScript for the areas that required interactivity, such as the features section.
+				</p>
+				<a href="./bookmark.html" class="project__button button button-secondary">View Project</a>
+			</div>
+		</section>
 
-  View Project
+		<section class="project">
+			<div class="project__column">
+				<img src="./images/portfolio/mobile/image-portfolio-insure.jpg" alt="Insure" class="project__image" />
+			</div>
+			<div class="project__column">
+				<h2 class="project__title">Insure</h2>
+				<p class="project__paragraph">
+					This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this
+					project required was to enable the toggling of the mobile navigation.
+				</p>
+				<a href="./insure.html" class="project__button button button-secondary">View Project</a>
+			</div>
+		</section>
 
-  Bookmark
+		<section class="project">
+			<div class="project__column">
+				<img src="./images/portfolio/mobile/image-portfolio-fylo.jpg" alt="Fylo" class="project__image" />
+			</div>
+			<div class="project__column">
+				<h2 class="project__title">Fylo</h2>
+				<p class="project__paragraph">
+					This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was
+					fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.
+				</p>
+				<a href="./fylo.html" class="project__button button button-secondary">View Project</a>
+			</div>
+		</section>
 
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
+		<section class="cta">
+			<h2 class="cta__title">Interested in doing a project together?</h2>
+			<a href="./contact.html" class="cta__button button button-secondary" role="button">Contact Me</a>
+		</section>
 
-  View Project
-
-  Insure
-
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
-
-  View Project
-
-  Fylo
-
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
-
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+		<footer class="footer">
+			<div class="footer__logo-box">
+				<a href="./index.html" class="footer__logo-link"><img src="./images/logo.svg" alt="Logo" class="footer__logo-image" /></a>
+			</div>
+			<nav class="menu menu-footer">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
+					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-social">
+				<ul class="menu-social__list">
+					<li class="menu-social__item">
+						<a href="#" class="menu-social__link"><img src="./images/icons/github.svg" alt="GitHub logo" class="menu-social__icon" /></a>
+					</li>
+					<li class="menu-social__item">
+						<a href="#" class="menu-social__link"
+							><img src="./images/icons/twitter.svg" alt="Twitter logo" class="menu-social__icon"
+						/></a>
+					</li>
+					<li class="menu-social__item">
+						<a href="#" class="menu-social__link"
+							><img src="./images/icons/linkedin.svg" alt="LinkedIn logo" class="menu-social__icon"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
 </html>
