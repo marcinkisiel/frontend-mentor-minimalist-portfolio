@@ -1,12 +1,45 @@
 .project {
+	@media (min-width: $md) {
+		display: flex;
+		gap: 69px;
+		align-items: center;
+		margin-bottom: 80px;
+
+		&:first-of-type {
+			margin-top: 47px;
+		}
+	}
+
+	&__column {
+		&--left {
+			order: 1;
+		}
+
+		&--right {
+			order: 2;
+		}
+	}
+
 	&__image {
 		display: block;
 		margin-bottom: 32px;
 		line-height: 0;
+
+		@media (min-width: $md) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__image-box {
+		flex-basis: 49%;
 	}
 
 	&__paragraph {
 		margin-bottom: 24px;
+
+		@media (min-width: $md) {
+			font-size: 15px;
+		}
 	}
 
 	&__text {
@@ -16,7 +49,10 @@
 		padding-bottom: 24px;
 
 		@media (min-width: $md) {
-			padding-top: 50px;
+			flex-basis: 41%;
+			margin-bottom: 0;
+			padding-top: 32px;
+			padding-bottom: 50px;
 		}
 
 		@media (min-width: $xl) {
