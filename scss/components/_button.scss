@@ -31,12 +31,12 @@
 		background-color: $primary-light;
 
 		&::before {
-			content: url(../../images/icons/down-arrows-white.svg);
+			content: url(../images/icons/down-arrows-white.svg);
 		}
 	}
 
 	&::before {
-		content: url(../../images/icons/down-arrows.svg);
+		content: url(../images/icons/down-arrows.svg);
 		position: absolute;
 		top: 0;
 		left: 0;
