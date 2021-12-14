@@ -10,13 +10,35 @@
 		}
 	}
 
+	@media (min-width: $xl) {
+		gap: 125px;
+	}
+
 	&__column {
-		&--left {
+		&--left-image,
+		&--left-text {
 			order: 1;
 		}
 
-		&--right {
+		&--right-image,
+		&--right-text {
 			order: 2;
+		}
+
+		&--left-text {
+			@media (min-width: $xl) {
+				margin-left: 95px;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+		}
+
+		&--right-text {
+			@media (min-width: $xl) {
+				margin-right: 95px;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
 		}
 	}
 
@@ -27,6 +49,10 @@
 
 		@media (min-width: $md) {
 			margin-bottom: 0;
+		}
+
+		@media (min-width: $xl) {
+			width: 540px;
 		}
 	}
 
@@ -40,6 +66,11 @@
 		@media (min-width: $md) {
 			margin-bottom: 35px;
 			font-size: 15px;
+		}
+
+		@media (min-width: $xl) {
+			margin-bottom: 24px;
+			font-size: 16px;
 		}
 	}
 
@@ -57,7 +88,9 @@
 		}
 
 		@media (min-width: $xl) {
+			padding-top: 103px;
 			padding-right: 92px;
+			padding-bottom: 103px;
 		}
 
 		&::before,
@@ -83,5 +116,9 @@
 
 	&__title {
 		margin-bottom: 24px;
+
+		@media (min-width: $xl) {
+			margin-bottom: 28px;
+		}
 	}
 }

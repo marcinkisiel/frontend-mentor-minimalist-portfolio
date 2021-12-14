@@ -12,6 +12,11 @@
 		margin-bottom: 96px;
 	}
 
+	@media (min-width: $xl) {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+
 	&__line {
 		display: none;
 
