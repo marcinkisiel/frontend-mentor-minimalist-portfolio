@@ -20,6 +20,10 @@
 			width: 16%;
 			border-bottom: 1px solid rgba($primary-dark, 0.15);
 		}
+
+		@media (min-width: $xl) {
+			width: 533px;
+		}
 	}
 
 	&__title {
@@ -28,6 +32,10 @@
 		@media (min-width: $md) {
 			flex-basis: 50%;
 			margin-bottom: 0;
+		}
+
+		@media (min-width: $xl) {
+			flex-basis: 350px;
 		}
 	}
 }
