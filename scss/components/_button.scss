@@ -46,3 +46,17 @@
 		padding: 16px 16px;
 	}
 }
+
+.button-secondary {
+	&--dark {
+		width: 200px;
+		color: $white;
+		background-color: $primary-darker;
+		border: 1px solid $primary-darker;
+
+		&:hover {
+			color: $primary-darker;
+			background-color: $white;
+		}
+	}
+}
