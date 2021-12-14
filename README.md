@@ -13,7 +13,7 @@ The design includes mobile, tablet & desktop views for a **Homepage**, **Portfol
 
 ### current status
 
-unfinished (only views for **Homepage**)
+unfinished
 
 ### implementation time
 
