@@ -1,19 +1,4 @@
 .project {
-	@media (min-width: $md) {
-		display: flex;
-		gap: 69px;
-		align-items: center;
-		margin-bottom: 80px;
-
-		&:first-of-type {
-			margin-top: 47px;
-		}
-	}
-
-	@media (min-width: $xl) {
-		gap: 125px;
-	}
-
 	&__categories {
 		display: block;
 		font-size: 13px;
@@ -22,33 +7,9 @@
 
 		&:last-of-type {
 			margin-bottom: 24px;
-		}
-	}
 
-	&__column {
-		&--left-image,
-		&--left-text {
-			order: 1;
-		}
-
-		&--right-image,
-		&--right-text {
-			order: 2;
-		}
-
-		&--left-text {
-			@media (min-width: $xl) {
-				margin-left: 95px;
-				padding-left: 0 !important;
-				padding-right: 0 !important;
-			}
-		}
-
-		&--right-text {
-			@media (min-width: $xl) {
-				margin-right: 95px;
-				padding-left: 0 !important;
-				padding-right: 0 !important;
+			@media (min-width: $md) {
+				margin-bottom: 16px;
 			}
 		}
 	}
@@ -58,6 +19,11 @@
 		margin-bottom: 48px;
 		padding-top: 24px;
 		padding-bottom: 24px;
+
+		@media (min-width: $md) {
+			margin-bottom: 40px;
+			padding-bottom: 32px;
+		}
 
 		&::before,
 		&::after {
@@ -100,6 +66,7 @@
 
 	&__paragraph {
 		margin-bottom: 24px;
+		color: rgba($primary-dark, 0.8);
 
 		@media (min-width: $md) {
 			margin-bottom: 35px;
@@ -187,6 +154,10 @@
 .project-switcher {
 	margin-top: 64px;
 
+	@media (min-width: $md) {
+		margin-top: 80px;
+	}
+
 	&__box {
 		display: flex;
 		justify-content: space-between;
@@ -219,6 +190,13 @@
 		padding-top: 24px;
 		padding-bottom: 24px;
 
+		@media (min-width: $md) {
+			display: flex;
+			align-items: center;
+			padding-top: 33px;
+			padding-bottom: 33px;
+		}
+
 		&--left {
 			text-align: left;
 
@@ -238,6 +216,14 @@
 		}
 	}
 
+	&__info {
+		&--right {
+			@media (min-width: $md) {
+				margin-left: auto;
+			}
+		}
+	}
+
 	&__link {
 		flex-basis: 50%;
 	}
@@ -246,8 +232,22 @@
 		color: rgba($primary-dark, 0.5);
 	}
 
-	&__prev-next-icon {
+	&__prev-icon,
+	&__next-icon {
 		width: auto;
 		height: 16px;
+	}
+
+	&__next-icon {
+		@media (min-width: $md) {
+			order: 2;
+			padding-left: 32px;
+		}
+	}
+
+	&__prev-icon {
+		@media (min-width: $md) {
+			padding-right: 32px;
+		}
 	}
 }

@@ -4,6 +4,10 @@
 
 	&--project {
 		margin-bottom: 40px;
+
+		@media (min-width: $md) {
+			margin-top: 47px;
+		}
 	}
 
 	&__image {
