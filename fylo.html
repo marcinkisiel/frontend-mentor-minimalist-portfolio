@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo Project</title>
-</head>
-<body>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./css/main.css" />
 
-  Home
-  Portfolio
-  Contact Me
+		<title>Frontend Mentor | Fylo Project</title>
+	</head>
+	<body>
+		<header class="header container">
+			<div class="header__logo-box">
+				<a href="./index.html" class="header__logo-link"><img src="./images/logo.svg" alt="Logo" class="header__logo-image" /></a>
+			</div>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--active">Portfolio</a></li>
+					<li class="menu__item"><a href="./contact.html" class="menu__link">Contact Me</a></li>
+				</ul>
+			</nav>
+			<div class="header__mobile-menu-toggle">
+				<img src="./images/icons/hamburger.svg" alt="" class="mobile-menu-toggle__icon" />
+			</div>
+		</header>
 
-  Fylo
+		<section class="hero hero--project container">
+			<picture>
+				<source srcset="./images/detail/tablet/image-fylo-hero.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+				<source srcset="./images/detail/desktop/image-fylo-hero.jpg" media="(min-width: 1200px)" />
+				<img src="./images/detail/mobile/image-fylo-hero.jpg" alt="Hero" class="hero__image" />
+			</picture>
+		</section>
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to 
-  work to and built it so that it was fully-responsive. I took a mobile-first approach 
-  and used modern CSS like Flexbox and Grid for layout purposes.
+		<section class="project container">
+			<div class="project__column project__intro">
+				<h2 class="project__title">Fylo</h2>
+				<p class="project__paragraph project__paragraph--smaller">
+					This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was
+					fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.
+				</p>
+				<span class="project__categories">Interaction Design / Front End Development</span>
+				<span class="project__categories">HTML / CSS</span>
+				<a href="#" class="project__button button button-secondary" role="button">Visit Website</a>
+			</div>
+			<div class="project__column project__background">
+				<h3 class="project__subtitle">Project Background</h3>
+				<p class="project__paragraph project__paragraph--smaller">
+					This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a
+					design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different
+					screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned
+					something new with each project, helping me to improve and adapt my style.
+				</p>
+				<h3 class="project__subtitle">Static Previews</h3>
+				<picture>
+					<source srcset="./images/detail/tablet/image-fylo-preview-1.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/detail/desktop/image-fylo-preview-1.jpg" media="(min-width: 1200px)" />
+					<img src="./images/detail/mobile/image-fylo-preview-1.jpg" alt="" class="project__preview" />
+				</picture>
+				<picture>
+					<source srcset="./images/detail/tablet/image-fylo-preview-2.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
+					<source srcset="./images/detail/desktop/image-fylo-preview-2.jpg" media="(min-width: 1200px)" />
+					<img src="./images/detail/mobile/image-fylo-preview-2.jpg" alt="" class="project__preview" />
+				</picture>
+			</div>
+		</section>
 
-  Interaction Design / Front End Development
+		<section class="project-switcher container">
+			<div class="project-switcher__box">
+				<a href="./insure.html" class="project-switcher__link">
+					<div class="project-switcher__column project-switcher__column--left">
+						<img class="project-switcher__prev-next-icon" src="./images/icons/arrow-left.svg" alt="" />
+						<h3 class="project-switcher__name">Insure</h3>
+						<span class="project-switcher__prev-next">Previous Project</span>
+					</div>
+				</a>
+				<a href="./manage.html" class="project-switcher__link">
+					<div class="project-switcher__column project-switcher__column--right">
+						<img class="project-switcher__prev-next-icon" src="./images/icons/arrow-right.svg" alt="" />
+						<h3 class="project-switcher__name">Manage</h3>
+						<span class="project-switcher__prev-next">Next Project</span>
+					</div>
+				</a>
+			</div>
+		</section>
 
-  HTML / CSS
+		<section class="cta container">
+			<h2 class="cta__title">Interested in doing a project together?</h2>
+			<span class="cta__line"></span>
+			<a href="./contact.html" class="cta__button button button-secondary" role="button">Contact Me</a>
+		</section>
 
-  Visit Website
-
-  Project Background
-
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
-
-  Static Previews
-
-  Insure
-  Previous Project
-
-  Manage
-  Next Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__logo-box">
+					<a href="./index.html" class="footer__logo-link">
+						<img src="./images/logo-white.svg" alt="Logo" class="footer__logo-image" />
+					</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list menu__list--footer">
+						<li class="menu__item"><a href="./index.html" class="menu__link menu__link--footer">Home</a></li>
+						<li class="menu__item"><a href="./portfolio.html" class="menu__link menu__link--footer">Portfolio</a></li>
+						<li class="menu__item"><a href="./contact.html" class="menu__link menu__link--footer">Contact Me</a></li>
+					</ul>
+				</nav>
+				<nav class="menu-social">
+					<ul class="menu-social__list">
+						<li class="menu-social__item">
+							<a href="#" class="menu-social__link"
+								><img src="./images/icons/github-white.svg" alt="GitHub logo" class="menu-social__icon"
+							/></a>
+						</li>
+						<li class="menu-social__item">
+							<a href="#" class="menu-social__link"
+								><img src="./images/icons/twitter-white.svg" alt="Twitter logo" class="menu-social__icon"
+							/></a>
+						</li>
+						<li class="menu-social__item">
+							<a href="#" class="menu-social__link"
+								><img src="./images/icons/linkedin-white.svg" alt="LinkedIn logo" class="menu-social__icon"
+							/></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</body>
 </html>
