@@ -14,6 +14,17 @@
 		gap: 125px;
 	}
 
+	&__categories {
+		display: block;
+		font-size: 13px;
+		line-height: 30px;
+		color: $primary-light;
+
+		&:last-of-type {
+			margin-bottom: 24px;
+		}
+	}
+
 	&__column {
 		&--left-image,
 		&--left-text {
@@ -39,6 +50,33 @@
 				padding-left: 0 !important;
 				padding-right: 0 !important;
 			}
+		}
+	}
+
+	&__intro {
+		position: relative;
+		margin-bottom: 48px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: $primary-dark;
+			opacity: 0.15;
+		}
+
+		&::before {
+			top: 0;
+			left: 0;
+		}
+
+		&::after {
+			bottom: 0;
+			left: 0;
 		}
 	}
 
@@ -71,6 +109,29 @@
 		@media (min-width: $xl) {
 			margin-bottom: 24px;
 			font-size: 16px;
+		}
+
+		&--smaller {
+			font-size: 15px;
+
+			&:last-of-type {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&__preview {
+		display: block;
+		line-height: 0;
+		margin-bottom: 32px;
+	}
+
+	&__subtitle {
+		margin-bottom: 28px;
+		line-height: 42px;
+
+		&:last-of-type {
+			margin-bottom: 40px;
 		}
 	}
 
@@ -120,5 +181,73 @@
 		@media (min-width: $xl) {
 			margin-bottom: 28px;
 		}
+	}
+}
+
+.project-switcher {
+	margin-top: 64px;
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: $primary-dark;
+			opacity: 0.15;
+		}
+
+		&::before {
+			top: 0;
+			left: 0;
+		}
+
+		&::after {
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&__column {
+		flex-basis: 50%;
+		position: relative;
+		padding-top: 24px;
+		padding-bottom: 24px;
+
+		&--left {
+			text-align: left;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 1px;
+				height: 100%;
+				background-color: rgba($primary-dark, 0.15);
+			}
+		}
+
+		&--right {
+			text-align: right;
+		}
+	}
+
+	&__link {
+		flex-basis: 50%;
+	}
+
+	&__prev-next {
+		color: rgba($primary-dark, 0.5);
+	}
+
+	&__prev-next-icon {
+		width: auto;
+		height: 16px;
 	}
 }

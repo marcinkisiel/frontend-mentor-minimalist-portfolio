@@ -2,6 +2,10 @@
 	position: relative;
 	margin-bottom: 96px;
 
+	&--project {
+		margin-bottom: 40px;
+	}
+
 	&__image {
 		display: block;
 	}
