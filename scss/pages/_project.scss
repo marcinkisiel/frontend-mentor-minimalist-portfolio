@@ -1,4 +1,15 @@
 .project {
+	@media (min-width: $xl) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__background {
+		@media (min-width: $xl) {
+			flex-basis: 635px;
+		}
+	}
+
 	&__button {
 		grid-area: button;
 		width: 178px;
@@ -9,6 +20,10 @@
 		font-size: 13px;
 		line-height: 30px;
 		color: $primary-light;
+
+		@media (min-width: $xl) {
+			margin-bottom: 16px;
+		}
 	}
 
 	&__categories {
@@ -17,6 +32,10 @@
 
 		@media (min-width: $md) {
 			margin-bottom: 16px;
+		}
+
+		@media (min-width: $xl) {
+			margin-bottom: 32px;
 		}
 	}
 
@@ -33,6 +52,14 @@
 			margin-bottom: 40px;
 			padding-top: 32px;
 			padding-bottom: 32px;
+		}
+
+		@media (min-width: $xl) {
+			display: block;
+			align-self: flex-start;
+			flex-basis: 350px;
+			padding-top: 48px;
+			padding-bottom: 48px;
 		}
 
 		&::before,
@@ -106,11 +133,21 @@
 		display: block;
 		line-height: 0;
 		margin-bottom: 32px;
+
+		&:last-of-type {
+			@media (min-width: $xl) {
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	&__subtitle {
 		margin-bottom: 28px;
 		line-height: 42px;
+
+		@media (min-width: $xl) {
+			margin-bottom: 28px !important;
+		}
 
 		&:last-of-type {
 			margin-bottom: 40px;
@@ -178,6 +215,10 @@
 		margin-top: 80px;
 	}
 
+	@media (min-width: $xl) {
+		margin-top: 64px;
+	}
+
 	&__box {
 		display: flex;
 		justify-content: space-between;
@@ -213,8 +254,8 @@
 		@media (min-width: $md) {
 			display: flex;
 			align-items: center;
-			padding-top: 33px;
-			padding-bottom: 33px;
+			padding-top: 32px;
+			padding-bottom: 32px;
 		}
 
 		&--left {
