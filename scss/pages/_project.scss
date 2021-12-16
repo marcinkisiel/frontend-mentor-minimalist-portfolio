@@ -1,16 +1,22 @@
 .project {
-	&__categories {
+	&__button {
+		grid-area: button;
+		width: 178px;
+	}
+
+	&__categorie {
 		display: block;
 		font-size: 13px;
 		line-height: 30px;
 		color: $primary-light;
+	}
 
-		&:last-of-type {
-			margin-bottom: 24px;
+	&__categories {
+		grid-area: categories;
+		margin-bottom: 24px;
 
-			@media (min-width: $md) {
-				margin-bottom: 16px;
-			}
+		@media (min-width: $md) {
+			margin-bottom: 16px;
 		}
 	}
 
@@ -21,7 +27,11 @@
 		padding-bottom: 24px;
 
 		@media (min-width: $md) {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			grid-template-areas: 'title paragraph' 'categories paragraph' 'button paragraph';
 			margin-bottom: 40px;
+			padding-top: 32px;
 			padding-bottom: 32px;
 		}
 
@@ -65,6 +75,7 @@
 	}
 
 	&__paragraph {
+		grid-area: paragraph;
 		margin-bottom: 24px;
 		color: rgba($primary-dark, 0.8);
 
@@ -78,12 +89,16 @@
 			font-size: 16px;
 		}
 
+		&--primary {
+			margin-bottom: 24px;
+		}
+
+		&--secondary {
+			margin-bottom: 40px;
+		}
+
 		&--smaller {
 			font-size: 15px;
-
-			&:last-of-type {
-				margin-bottom: 40px;
-			}
 		}
 	}
 
@@ -143,7 +158,12 @@
 	}
 
 	&__title {
+		grid-area: title;
 		margin-bottom: 24px;
+
+		@media (min-width: $md) {
+			margin-bottom: 16px;
+		}
 
 		@media (min-width: $xl) {
 			margin-bottom: 28px;
