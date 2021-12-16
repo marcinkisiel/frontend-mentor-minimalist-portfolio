@@ -132,6 +132,10 @@
 	&__preview {
 		display: block;
 		line-height: 0;
+	}
+
+	&__preview-picture {
+		display: block;
 		margin-bottom: 32px;
 
 		&:last-of-type {
